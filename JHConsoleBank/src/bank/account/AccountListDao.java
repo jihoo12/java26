@@ -21,7 +21,7 @@ public class AccountListDao implements AccountDao {
     @Override
     public Account findByNo(String no) {
         for (Account a : list) {
-            if (a.getNo() == Integer.parseInt(no)) {
+            if (a.getNo() == no) {
                 return a;
             }
         }
