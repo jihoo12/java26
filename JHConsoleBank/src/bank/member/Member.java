@@ -1,16 +1,24 @@
-package bank.member
+package bank.member;
 public class Member {
+
+    static final char ADMIN_ID = 'A';
+    static final char USER = 'U';
+
     private String id;
     private String password;
     private String name;
     private String email;
     private String mobile;
-    public Member(String id,String password,String name,String email,String mobile) {
+
+    private char type;
+
+    public Member(String id,String password,String name,String email,String mobile ,char type) {
         this.id = id;
         this.password = password;
         this.name = name;
         this.email = email;
         this.mobile = mobile;
+        this.type = type;
     }
     public Member(String id,String password,String name) {
         this(id,password,name,null,null);
