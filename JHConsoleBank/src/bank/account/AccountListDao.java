@@ -19,7 +19,7 @@ public class AccountListDao implements AccountDao {
     }
 
     @Override
-    public Account findByNo(String no) {
+    public Account findByNo(int no) {
         for (Account a : list) {
             if (a.getNo() == no) {
                 return a;
